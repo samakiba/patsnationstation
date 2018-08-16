@@ -1,0 +1,483 @@
+body{
+  background-color: #F5F5F5
+}
+
+h1{
+font-family: 'Work Sans', sans-serif;
+text-align: center;
+font-size: 50px;
+color: gray;
+text-shadow: 2px 2px black;
+}
+
+
+.top:before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  background-image: url("../patslogo.png");
+  background-size: auto 100%;
+  background-position: center center;
+  opacity: 0.6;
+  z-index: -1
+}
+
+.slider a {
+font-family: 'Work Sans', sans-serif;
+text-align: center;
+font-size: 80px;
+margin-left: 20px;
+color: white;
+margin-top: 400px;
+padding-top: 80px;
+text-decoration: none;
+}
+
+h2 {
+font-family: 'Work Sans', sans-serif;
+text-align: center;
+font-size: 40px;
+margin-left: 20px;
+}
+
+
+
+a:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+.slide h2 {
+font-family: 'Work Sans', sans-serif;
+text-align:left;
+font-size: 70px;
+margin-left: 20px;
+color: white;
+}
+
+.center p{
+text-align: left;
+color: black;
+font-size: 20px;
+padding-left: 24px;
+font-family: Helvetica;
+font-weight: 100;
+
+}
+
+.mainpic img{
+  width: 100%;
+  margin-left: 20px;
+  max-width: 900px;
+}
+
+a{
+  text-decoration: none
+}
+
+}
+ h2 a:visited{
+  color:black;
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  border: none;
+  height: 5px;
+  margin-bottom: 15px;
+}
+
+.header {
+  background-color: white;
+  padding: 20px;
+}
+
+.mainbody{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+.mainbody {
+  display: block;
+
+}
+}
+
+
+
+.center{
+  flex-basis:70%;
+}
+
+.rightcolumn{
+  flex-basis:30%;
+}
+
+
+.rightcolumn{
+  max-width: 350px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.rightcolumn a {
+font-size: 18px;
+font-weight: bold;
+padding: 2px;
+width: 150px;
+margin-left: 30px;
+padding-top: 20px;
+font-family: Helvetica;
+}
+
+.thumbnail {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 150px
+}
+.rightcolumn div:nth-of-type(1) img {
+    margin-top: 0px;
+}
+
+
+.bottom{
+  background-color: 	#E8E8E8;
+  padding: 20px;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.bottom a {
+  padding-left: 20px;
+
+}
+
+/* img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+} */
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slide_viewer {
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {
+  background-image: url("https://cdn.cnn.com/cnnnext/dam/assets/150201220033-patriots-sb-2015-tease-super-169.jpg");
+  background-position: 100% 0%;
+}
+
+.slide:nth-of-type(2) {
+  background-image: url("http://www.profootballhof.com/assets/1/6/ACT_2_2015_Shaw.jpg");
+  background-position: 100% 0%;
+}
+
+.slide:nth-of-type(3) {
+  background-image: url("https://c.o0bg.com/rf/image_960w/Boston/2011-2020/2015/09/06/BostonGlobe.com/Sports/Images/2015-08-29T031424Z_2007999528_NOCID_RTRMADP_3_NFL-PRESEASON-NEW-ENGLAND-PATRIOTS-AT-CAROLINA-PANTHERS.jpg");
+  background-position: 100% 0%;
+}
+
+/* .teaser{
+color:white;
+font-size: 10px;
+text-align: center; */
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 70px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: -150px;
+}
+
+.previous_btn {
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 50px;
+  }
+  .next_btn {
+    right: 50px;
+  }
+}
+
+#popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top:0;
+  width:100%;
+  height:100%
+}
+
+#popup-container.hidden {
+  display: none;
+}
+#signup-popup {
+  text-align: center;
+  font-weight: bold;
+
+  padding: 40px;
+  background-color: white;
+  border: 5px solid grey;
+  border-radius: 20px;
+}
+#signup-popup a {
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 2px 0;
+  width: 140px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin: 60 auto;
+  font-family: Helvetica;
+}
+
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top:0;
+  width:100%;
+  height:100%
+}
+
+#contact.hiddencontact {
+  display: none;
+}
+#contact-popup {
+  text-align: center;
+  font-weight: bold;
+
+  padding: 40px;
+  background-color: white;
+  border: 5px solid grey;
+  border-radius: 20px;
+}
+#contact-popup a {
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.contactbutton {
+  border-radius: 1px;
+  font-weight: 800;
+  padding: 2px 0;
+  width: 300px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin: 60 auto;
+  font-family: Helvetica;
+}
+
+form {
+  font-family: Helvetica;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+#patslinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top:0;
+  width:100%;
+  height:100%
+}
+
+#patslinks.hiddenlinks {
+  display: none;
+}
+#links-popup {
+  text-align: center;
+  font-weight: bold;
+
+  padding: 40px;
+  background-color: white;
+  border: 5px solid grey;
+  border-radius: 20px;
+}
+#links-popup a {
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.linksbutton {
+  border-radius: 1px;
+  font-weight: 800;
+  padding: 2px 0;
+  width: 300px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin: 60 auto;
+  font-family: Helvetica;
+}
+
+#links-popup p {
+  font-family: Helvetica;
+  text-decoration:none;
+  font-size: 14px
+}
+
+#links-popup p a {
+  text-decoration:none;
+}
+
+#links-popup h4 {
+  font-family: Helvetica;
+  font-size: 20px;
+
+}
+.lowerlink{
+  color: black;
+}
+
+.article p{
+  text-align: left;
+  padding-left: 22%;
+  padding-right: 20%;
+  width: 100% auto;
+}
+.articlepic{
+  padding-left: 26%;
+  padding-right: 20%;
+}
+
+.writer{
+  padding-left: 22%;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px;
+}
