@@ -217,7 +217,7 @@ html, body {
 }
 
 .slide:nth-of-type(2) {
-  background-image: url("http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0817%2Fr416072_1296x729_16-9.jpg&w=920&h=518&scale=crop&cquality=80&location=origin");
+  background-image: url("https://usatpatriotswire.files.wordpress.com/2017/01/gettyimages-632427814.jpg?w=1000&h=600&crop=1");
   background-position: 100% 0%;
 }
 
@@ -474,6 +474,10 @@ textarea {
   padding-left: 26%;
   padding-right: 20%;
 }
+.articlepictwo{
+  padding-left: 20%;
+  padding-right: 20%;
+}
 
 .writer{
   padding-left: 22%;
@@ -481,3 +485,26 @@ textarea {
   font-weight: bold;
   padding-top: 10px;
 }
+
+table {
+    font-family: Helvetica;
+    font-size: 11px;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    margin-left: 250px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.articlelinks {
+  color: inherit;
+ }
